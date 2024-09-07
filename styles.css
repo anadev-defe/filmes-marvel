@@ -1,11 +1,12 @@
 body {
     align-items:center;
     background-image: url(imagem/ranking-mcu.jpg);
+    background-position: 0%;
     background-size: cover;
     justify-content: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    margin: 0;
+    background-repeat:round;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
