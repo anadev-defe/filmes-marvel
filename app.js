@@ -3,7 +3,7 @@ function pesquisar (){
     let campoPesquisa = document.getElementById ("campo-pesquisa"). value;
 
    if (!campoPesquisa) {
-    section.innerHTML = "<p> Nada foi encontrado.</p>"
+        section.innerHTML = "<p> Nada foi encontrado.</p>"
     return
    };
    campoPesquisa= campoPesquisa.toLowerCase()
@@ -14,12 +14,12 @@ function pesquisar (){
    let link= "";
    let tags= "";
    
-for (let dado of dados) {
+    for (let dado of dados) {
     titulo= dado.titulo.toLocaleLowerCase ()
     sinopse= dado.sinopse.toLocaleLowerCase ()
     link= dado.link.toLocaleLowerCase ()
     tags= dado.tags.toLocaleLowerCase ()
-    if (titulo.includes (campoPesquisa)|| sinopse.includes (campoPesquisa)|| link.includes (campoPesquisa) || tags.includes (campoPesquisa)){
+        if (titulo.includes (campoPesquisa)|| sinopse.includes (campoPesquisa)|| link.includes (campoPesquisa) || tags.includes (campoPesquisa)){
          resultados +=`
     <div class="item-resultado">
            <h2>
